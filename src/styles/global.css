@@ -4,14 +4,17 @@
 
 @layer base {
   html {
-    @apply bg-slate-200 font-serif;
+    @apply bg-slate-100 font-serif;
   }
+
   body {
     @apply my-0 mx-auto w-full max-w-3xl p-4 leading-normal;
   }
+
   * {
     @apply box-border;
   }
+
   h1 {
     @apply my-4 mx-0 text-5xl;
   }

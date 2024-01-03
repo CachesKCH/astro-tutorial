@@ -2,6 +2,25 @@
 
 ---
 
-<a href="/">Inicio</a>
-<a href="/about/">Sobre mi</a>
-<a href="/blog/">Blog</a>
+<style>
+  @tailwind base;
+  @layer base {
+    .nav-links {
+      @apply md:ml-20 md:block md:static md:w-auto md:bg-none w-full top-20 left-12 bg-red-300 m-0;
+    }
+
+    .nav-links a {
+      @apply md:inline-block md:py-4 md:px-5 block text-center py-2.5 px-0 text-xl font-bold uppercase hover:bg-red-500 focus:bg-red-500;
+    }
+
+    .expanded {
+      @apply block;
+    }
+  }
+</style>
+<div class="nav-links">
+  <a href="/">Inicio</a>
+  <a href="/about/">Sobre mi</a>
+  <a href="/blog/">Blog</a>
+  <a href="/tags/">Tags</a>
+</div>
